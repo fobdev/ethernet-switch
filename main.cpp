@@ -19,7 +19,7 @@ int main()
 
 	if(value_loaded == value_array[0])
 	{
-		std::cout << "netsh must be disabled right now." << std::endl;
+		std::cout << "Ethernet will be DISABLED right now." << std::endl;
 		system("netsh interface set interface ethernet admin=disable");
 		saver << "";
 		saver << value_array[1];
@@ -27,7 +27,7 @@ int main()
 	}
 	else if(value_loaded == value_array[1])
 	{
-		std::cout << "netsh must be enabled right now." << std::endl;
+		std::cout << "Ethernet will be ENABLED right now." << std::endl;
 		system("netsh interface set interface ethernet admin=enable");
 		saver << "";
 		saver << value_array[0];
